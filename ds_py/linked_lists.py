@@ -7,7 +7,13 @@ class Node:
 
 class LinkedList:
     def __init__(self):
-    self.head = None
+        self.head = None
 
-
+    def append(self, value):
+        # given a value
+        new_value = Node(value)
+        if self.head == None:
+            self.head = new_value
+            return
+        # add next value
 # TODO add append, insert, delete
