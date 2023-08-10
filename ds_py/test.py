@@ -14,3 +14,6 @@ def update_matrix3x3(matrix3x3, row, column, value):
                     matrix3x3[i][j] = value # assign the new values for those coordinates
 
     return matrix3x3
+
+
+## check the winner
