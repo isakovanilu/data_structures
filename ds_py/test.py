@@ -1,5 +1,3 @@
-# create a 3x3 matrix
-matrix3x3 = [[' ' for i in range(3)] for j in range(3)] # it will create an empty 3x3 list range(3):0,1,2
 
 def update_matrix3x3(matrix3x3, row, column, value):
     row_len = len(matrix3x3) # row length
@@ -29,3 +27,20 @@ def winner_check(matrix3x3, value):
         if matrix3x3[x][0] == matrix3x3[1][1] == matrix3x3[2-x][2]:
             return True
     return False
+
+def play():
+    value = "X"
+    # create a 3x3 matrix
+    matrix3x3 = [[' ' for i in range(3)] for j in range(3)] # it will create an empty 3x3 list range(3):0,1,2
+
+    while True:
+        row = int(input(f"Player {value}, enter row (0, 1, 2): "))
+        column = int(input(f"Player {value}, enter column (0, 1, 2): "))
+        update_matrix3x3(matrix3x3, row=row, column=column, value=value)
+        if winner_check(matrix3x3, value):
+            print(f"Player {value} is winner")
+            break
+
+        value = "O" if value == "X" else "X"
+
+play()
