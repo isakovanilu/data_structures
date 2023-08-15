@@ -1,3 +1,4 @@
+import random
 def two_sum(alist, target):
     pairs_list = []
     for i in range(len(alist)):
@@ -40,6 +41,41 @@ def reverse(alist):
     print(alist)
 alist2 = [1,2,3,4,5]
 reverse(alist2) 
-    
-        
-        
+   
+# dictionaries .py 
+def dict_search(dict, value):
+    for key in dict:
+        if dict[key] == value:
+            return key, value
+    return ('the value do not exist in the dictionary')
+
+mydict = {'name':'leo', 'age':26}
+print(dict_search(mydict, 26))
+
+city_names = ['Paris', 'London', 'Rome', 'Berlin', 'Madrid']
+
+new_temps = {city: random.randint(20, 30) for city in city_names}
+print(new_temps)
+
+new_dict = {city: temp for (city, temp) in new_temps.items() if temp > 25}
+print('new_dict', new_dict)
+
+words = ['apple', 'orange', 'banana', 'apple', 'orange', 'apple'] 
+
+def count_words_frequency(words):
+    count_words = {}
+    for i in words:
+        count_words[i] = count_words.get(i, 0) + 1
+    return count_words  
+print(count_words_frequency(words))
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'b': 3, 'c': 4, 'd': 5}
+
+def merge_dicts(dict1, dict2):
+    result = dict1.copy()
+    for key, value in dict2.items():
+        result[key] = result.get(key, 0) + value
+    return result
+                
+print(merge_dicts(dict1, dict2))
