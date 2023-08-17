@@ -84,4 +84,12 @@ print(merge_dicts(dict1, dict2))
 # dictionaries
 def filter_dict(my_dict, condition):
     return {k: v for k, v in my_dict.items() if condition(k, v)}
-    
+
+def sum_product(input_tuple):
+    sum_result = 0
+    product_result = 1
+    for i in input_tuple:
+        sum_result += i
+        product_result *= i    
+
+    return sum_result, product_result
