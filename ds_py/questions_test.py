@@ -79,3 +79,9 @@ def merge_dicts(dict1, dict2):
     return result
                 
 print(merge_dicts(dict1, dict2))
+
+
+# dictionaries
+def filter_dict(my_dict, condition):
+    return {k: v for k, v in my_dict.items() if condition(k, v)}
+    
