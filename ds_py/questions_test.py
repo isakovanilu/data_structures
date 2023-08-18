@@ -93,3 +93,6 @@ def sum_product(input_tuple):
         product_result *= i    
 
     return sum_result, product_result
+
+def common_elements(tuple1, tuple2):
+    return tuple(set(tuple1) & set(tuple2))
