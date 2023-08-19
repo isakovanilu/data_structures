@@ -8,6 +8,8 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
+        self.tail = None
+        self.length = 1
 
     def append(self, value):
         # given a value
@@ -17,3 +19,6 @@ class LinkedList:
             return
         # add next value
 # TODO add append, insert, delete
+
+new_linked_list = LinkedList()
+print(new_linked_list.length)
