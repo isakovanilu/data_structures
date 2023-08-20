@@ -24,20 +24,52 @@ class LinkedList:
     def append(self, value):
         # given a value
         new_value = Node(value)
-        if self.head == None:
+        if self.head is None:
             self.head = new_value
             self.tail = new_value
         else:
             self.tail.next = new_value
             self.tail = new_value
         self.length += 1
+        
+    def prepend(self, value):
+        new_value = Node(value)
+        if self.head is None:
+            self.head = new_value
+            self.tail = new_value
+        else:
+            new_value.next = self.head
+            self.head = new_value
+        self.length += 1
+        
+    def insert(self, index, value):
+        new_value = Node(value)
+        if index < 0 or index > self.length:
+            return False
+        elif self.length == 0:
+            self.head = new_value
+            self.tail = new_value
+        elif index == 0:
+            new_value.next = self.head
+            self.head = new_value
+        else:
+            temp_node = self.head
+            for _ in range(index-1):
+                temp_node = temp_node.next
+            new_value.next = temp_node.next
+            temp_node.next = new_value
+        self.length += 1
+        return True
+                
         # add next value
 # TODO add append, insert, delete
 
 new_linked_list = LinkedList()
-new_linked_list.append(50)
-new_linked_list.append(10)
-new_linked_list.append(60)
-print('head', new_linked_list)
-print('tail', new_linked_list)
+new_linked_list.insert(0, 50)
+new_linked_list.prepend(10)
+new_linked_list.append(20)
+new_linked_list.append(30)
+print(new_linked_list)
+new_linked_list.insert(2, 100)
+print(new_linked_list)
 
