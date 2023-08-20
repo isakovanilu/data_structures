@@ -16,9 +16,17 @@ class LinkedList:
         new_value = Node(value)
         if self.head == None:
             self.head = new_value
-            return
+            self.tail = new_value
+        else:
+            self.tail.next = new_value
+            self.tail = new_value
+        self.length += 1
+        
         # add next value
 # TODO add append, insert, delete
 
 new_linked_list = LinkedList()
+new_linked_list.append(10)
+new_linked_list.append(20)
+new_linked_list.append(40)
 print(new_linked_list.length)
