@@ -66,16 +66,23 @@ class LinkedList:
         while current:
             print(current.value)
             current = current.next
-                
-        # add next value
-# TODO add append, insert, delete
+
+    def search(self, target):
+        current = self.head
+        index = 0
+        while current:
+            if current.value == target:
+                return index
+            current = current.next
+            index += 1
+        return -1        
 
 new_linked_list = LinkedList()
 # new_linked_list.insert(0, 50)
 new_linked_list.prepend(10)
 new_linked_list.append(20)
 new_linked_list.append(30)
-print(new_linked_list)
-new_linked_list.traverse()
+# print(new_linked_list)
+print(new_linked_list.search(30))
 print(new_linked_list)
 
