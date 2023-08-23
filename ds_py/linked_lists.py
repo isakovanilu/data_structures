@@ -87,12 +87,20 @@ class LinkedList:
             current = current.next
         return current
      
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+    
+
 new_linked_list = LinkedList()
 # new_linked_list.insert(0, 50)
 new_linked_list.prepend(10)
 new_linked_list.append(20)
 new_linked_list.append(30)
 # print(new_linked_list)
-print(new_linked_list.get(-1))
+print(new_linked_list.set_value(2, 100))
 print(new_linked_list)
 
