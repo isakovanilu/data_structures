@@ -18,19 +18,5 @@ def remove_duplicates(ll):
         prev_node = current_node
         current_node = current_node.next
  
-    ll.tail = prev_node  
-    return ll
-
-ll = LinkedList()
-
-ll.prepend(1)
-ll.append(2)
-ll.append(2)
-ll.append(3)
-ll.append(3)
-ll.append(4)
-ll.append(4)
-ll.append(4)
-print(ll)
-ll = remove_duplicates(ll)
-print(ll)
+    ll.tail = prev_node
+    return ll.head
