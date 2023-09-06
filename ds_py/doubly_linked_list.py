@@ -50,3 +50,31 @@ class DoublyLinkedList:
                 newNode.prev = tempNode
                 newNode.next.prev = newNode
                 tempNode.next = newNode
+
+    def reverse(self):
+        if self.head is Node:
+            print("There is no any element to reverse.")   
+        else:
+            tempNode = self.head
+            while tempNode:
+                print(tempNode.value)
+                tempNode = tempNode.next
+                         
+    def reverseTraversalDLL(self):
+        if self.head is Node:
+            print("There is no any element to traversal.")
+            
+        else:
+            tempNode = self.tail
+            while tempNode:
+                print(tempNode.value)
+                tempNode = tempNode.prev
+    
+    
+
+
+        
+            
+        
+        
+        
