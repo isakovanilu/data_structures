@@ -70,7 +70,58 @@ class DoublyLinkedList:
                 print(tempNode.value)
                 tempNode = tempNode.prev
     
-    
+    def searchDLL(self, nodeValue):
+        if self.head is None:
+            print("There is no value to search")
+        else:
+            tempNode = self.head
+            while tempNode:
+                if tempNode.value == nodeValue:
+                    return tempNode.value
+                tempNode = tempNode.next
+            return "The node do not exist in this list"
+     
+    def deleteNode(self, location):
+        if self.head is None:
+            print("There is not element to delete")
+        else:
+            if location == 0:
+                if self.head == self.tail:
+                    self.head = None
+                    self.tail = None
+                else:
+                    self.head = self.head.next
+                    self.head.prev = None
+            elif location == 1:
+                if self.head == self.tail:
+                    self.head = None
+                    self.tail = None
+                else:
+                    self.tail = self.tail.prev
+                    self.tail.next = None
+                    
+            else:
+                curNode = self.head
+                index = 0
+                while index < location - 1:
+                    curNode = curNode.next
+                    index += 1
+                curNode.next = curNode.next.next
+                curNode.next.prev = curNode
+            print("The node has been successfully deleted")
+                
+                
+doublyLL = DoublyLinkedList()
+doublyLL.createDLL(5)
+doublyLL.insertNode(0,0)
+doublyLL.insertNode(2,1)
+doublyLL.insertNode(6,2)
+print([node.value for node in doublyLL])
+# doublyLL.reverse()
+doublyLL.deleteNode(2)
+print([node.value for node in doublyLL])
+# doublyLL.reverseTraversalDLL()
+# print(doublyLL.searchDLL(6))    
 
 
         
