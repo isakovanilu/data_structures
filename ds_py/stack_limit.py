@@ -20,6 +20,11 @@ class Stack:
         else:
             return False
         
-
-            
+    def push(self, value):
+        if self.isFull():
+            return "The stack is full"
+        else:
+            self.list.append(value)
+            return "The element has been successfully inserted"
+        
         
