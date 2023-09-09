@@ -1,0 +1,25 @@
+class Stack:
+    def __init__(self, maxSize):
+        self.maxSize = maxSize
+        self.list = []
+        
+    def __str__(self):
+        values = reversed(self.list)
+        values = [str(x) for x in values]
+        return '\n'.join(values)
+    
+    def isEmpty(self):
+        if self.list == []:
+            return True
+        else:
+            return False
+    
+    def isFull(self):
+        if len(self.list) == self.maxSize:
+            return True
+        else:
+            return False
+        
+
+            
+        
