@@ -27,4 +27,9 @@ class Stack:
             self.list.append(value)
             return "The element has been successfully inserted"
         
-        
+    def pop(self):
+        if self.isEmpty():
+            return "There is no element in the stack"
+        else:
+            return self.list.pop()
+    
