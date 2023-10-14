@@ -113,6 +113,7 @@ def char_count(string):
     return result
             
 print(char_count('Heh ll oo'))
+
         
 def sum_of_digits(n):
     if n == 0:
