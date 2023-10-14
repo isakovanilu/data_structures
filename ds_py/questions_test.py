@@ -96,3 +96,28 @@ def sum_product(input_tuple):
 
 def common_elements(tuple1, tuple2):
     return tuple(set(tuple1) & set(tuple2))
+
+def char_count(string):
+    # create an object to return at the end
+    result = {}
+    
+    # loop through the string
+    for i in string.lower():
+        # if the char is in the result, add 1 to the result value
+        if isinstance(i, str) and not (i.isspace()):
+            if i in result:
+                result[i] += 1
+            else:
+                result[i] = 1
+    # return the result
+    return result
+            
+print(char_count('Heh ll oo'))
+        
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return int(n%10) + sum_of_digits(int(n//10))
+    
+print(sum_of_digits(114))
