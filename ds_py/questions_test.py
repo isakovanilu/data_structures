@@ -122,3 +122,13 @@ def sum_of_digits(n):
         return int(n%10) + sum_of_digits(int(n//10))
     
 print(sum_of_digits(114))
+
+def find_biggest_number(ll):
+    biggest_num = ll[0]
+    for i in range(1, len(ll)):
+        if ll[i] > biggest_num:
+            biggest_num = ll[i]
+    return biggest_num
+    
+print('biggest_num', find_biggest_number([9,1,2,11,34,55]))
+            
