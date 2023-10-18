@@ -143,4 +143,13 @@ def power(b, e):
     
 print(power(4.3,-4))
         
-            
+def gcd(a, b):
+    assert int(a) == a and int(b) == b, 'The gcd nums must be integer'
+    if a < 0:
+        a = -1 * a
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a%b) 
+    
+print(gcd(-48, 18))          
