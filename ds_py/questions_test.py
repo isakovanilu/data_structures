@@ -131,4 +131,16 @@ def find_biggest_number(ll):
     return biggest_num
     
 print('biggest_num', find_biggest_number([9,1,2,11,34,55]))
+
+def power(b, e):
+    assert int(e) == e, 'The exp must be integer'
+    if e == 0:
+        return 1
+    elif e < 0:
+        return 1/b * power(b, e+1)
+    else:
+        return b * power(b, e-1)
+    
+print(power(4.3,-4))
+        
             
