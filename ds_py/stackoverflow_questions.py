@@ -10,3 +10,5 @@ df = pd.DataFrame(data)
 def count_unique_column_values(df, col):
     return df[[col]].value_counts(ascending=False) #count columns values
 
+for col in list(df.columns):
+    print(count_unique_column_values(df, col))
