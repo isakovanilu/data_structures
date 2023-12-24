@@ -10,7 +10,7 @@ def two_sum(alist, target):
                 print(f"{alist[i]} + {alist[j]}")
     print('pairs_list', pairs_list)
 alist = [2, 4, 3, 5, 6, -2, 4, 7, 8, 9]
-# two_sum(alist, 7)
+two_sum(alist, 7)
 
 
 def contains_duplicate(nums):
@@ -28,7 +28,7 @@ def print_unordered_list(alist):
     for i in range(len(alist)):
         for j in range(len(alist)):
             if alist[i] < alist[j]:
-                print(str(alist[i])+","+str(alist[j]))
+                return (str(alist[i])+","+str(alist[j]))
 alist = [3,4,5,7,1,2]
 print_unordered_list(alist)
 
@@ -158,8 +158,7 @@ def decimal_to_binary(n):
     assert int(n) == n, 'The parameter should be integer'
     if n == 0:
         return 0
-    else:
-        return n%2 + 10 * decimal_to_binary(int(n/2))
+    return n%2 + 10 * decimal_to_binary(int(n/2))
 
 print(decimal_to_binary(12))
 
