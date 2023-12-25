@@ -110,6 +110,7 @@ def char_count(string):
             else:
                 result[i] = 1
     # return the result
+    print('\nresult\n', result)
     return result
             
 print(char_count('Heh ll oo'))
@@ -118,8 +119,7 @@ print(char_count('Heh ll oo'))
 def sum_of_digits(n):
     if n == 0:
         return 0
-    else:
-        return int(n%10) + sum_of_digits(int(n//10))
+    return int(n%10) + sum_of_digits(int(n//10))
     
 print(sum_of_digits(114))
 
@@ -138,8 +138,7 @@ def power(b, e):
         return 1
     elif e < 0:
         return 1/b * power(b, e+1)
-    else:
-        return b * power(b, e-1)
+    return b * power(b, e-1)
     
 print(power(4.3,-4))
         
@@ -149,8 +148,7 @@ def gcd(a, b):
         a = -1 * a
     if b == 0:
         return a
-    else:
-        return gcd(b, a%b) 
+    return gcd(b, a%b) 
     
 print(gcd(-48, 18))
 
