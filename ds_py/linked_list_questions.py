@@ -22,6 +22,7 @@ def remove_duplicates(ll):
     return ll.head
 
 
+# lc q75
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
