@@ -1,7 +1,11 @@
 import random
 
 def basic_calculator():
-    """Basic Calculator: Create a program that takes two numbers as inputs and performs basic arithmetic operations (addition, subtraction, multiplication, division). This introduces the concept of variables, user input, and basic arithmetic operations."""
+    """Basic Calculator: Create a program that takes 
+    two numbers as inputs and performs basic arithmetic 
+    operations (addition, subtraction, multiplication, division). 
+    This introduces the concept of variables, user input, 
+    and basic arithmetic operations."""
     while True:
         a = int(input('Enter a number1: '))
         b = int(input('Enter a number2: '))
@@ -25,9 +29,15 @@ def basic_calculator():
 # basic_calculator()
 
 def number_guessing():
+    """
+    Number Guessing Game: Develop a simple game where 
+    the program randomly selects a number, and the user
+    has to guess it. Provide hints like "too high" or "too low." 
+    This will teach control structures 
+    (if-else statements) and the use of random number generation.
+    """
     rand_number = random.randint(1, 3)
     while True:
-        print('rand_number', rand_number)
         guessed_number = int(input('Enter a number to guess: '))
         if rand_number < guessed_number:
             print('Too high')
