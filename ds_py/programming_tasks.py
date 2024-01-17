@@ -37,8 +37,8 @@ def number_guessing():
     Number Guessing Game: Develop a simple game where
     the program randomly selects a number, and the user has to guess it.
     Provide hints like "too high" or "too low."
-    This will teach control structures
-    (if-else statements) and the use of random number generation.
+    This will teach control structures (if-else statements) 
+    and the use of random number generation.
     """
     rand_number = random.randint(1, 10)
     while True:
