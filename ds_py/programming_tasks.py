@@ -1,3 +1,5 @@
+import random
+
 def basic_calculator():
     """Basic Calculator: Create a program that takes two numbers as inputs and performs basic arithmetic operations (addition, subtraction, multiplication, division). This introduces the concept of variables, user input, and basic arithmetic operations."""
     while True:
@@ -20,4 +22,19 @@ def basic_calculator():
         if continue_calculation not in ['yes', 'y']:
             break
 
-basic_calculator()
+# basic_calculator()
+
+def number_guessing():
+    rand_number = random.randint(1, 3)
+    while True:
+        print('rand_number', rand_number)
+        guessed_number = int(input('Enter a number to guess: '))
+        if rand_number < guessed_number:
+            print('Too high')
+        elif rand_number > guessed_number:
+            print('Too low')
+        elif rand_number == guessed_number:
+            print('You have guessed the number')
+            break
+    
+number_guessing()    
