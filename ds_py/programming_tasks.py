@@ -1,4 +1,5 @@
 def basic_calculator():
+    """Basic Calculator: Create a program that takes two numbers as inputs and performs basic arithmetic operations (addition, subtraction, multiplication, division). This introduces the concept of variables, user input, and basic arithmetic operations."""
     while True:
         a = int(input('Enter a number1: '))
         b = int(input('Enter a number2: '))
