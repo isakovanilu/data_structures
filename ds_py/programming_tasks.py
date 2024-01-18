@@ -52,4 +52,15 @@ def number_guessing():
             break
 
 
-number_guessing()
+# number_guessing()
+
+def reverse_string(string):
+    result = ''
+
+    for s in string:
+        print(s)
+        result = s + result
+    print(result)
+    return result
+    
+reverse_string("hqq")
