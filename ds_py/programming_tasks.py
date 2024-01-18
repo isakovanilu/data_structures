@@ -55,6 +55,9 @@ def number_guessing():
 # number_guessing()
 
 def reverse_string(string):
+    if len(string) == 1:
+        print(string)
+        return string
     result = ''
 
     for s in string:
@@ -63,4 +66,4 @@ def reverse_string(string):
     print(result)
     return result
     
-reverse_string("hqq")
+reverse_string("hello")
