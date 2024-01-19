@@ -80,10 +80,10 @@ def palindrome_checker(string):
 
     for s in string:
         result = s + result
-    if string.lower() == result.lower():
+    if string.lower().strip() == result.lower().strip():
         print('its palindrome')
         return True
     print('not a palindrome')
     return False
 
-palindrome_checker("ollo")
+palindrome_checker("ollo ")
