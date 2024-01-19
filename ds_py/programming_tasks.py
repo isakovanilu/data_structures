@@ -62,11 +62,11 @@ def reverse_string(string):
 
     for s in string:
         print(s)
-        result = s + result
+        result = s.strip() + result
     print(result)
     return result
     
-# reverse_string("hello")
+reverse_string("hell o")
 
 def palindrome_checker(string):
     """
@@ -86,4 +86,4 @@ def palindrome_checker(string):
     print('not a palindrome')
     return False
 
-palindrome_checker("ollo ")
+# palindrome_checker("ollo ")
