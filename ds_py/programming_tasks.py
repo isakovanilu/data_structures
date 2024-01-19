@@ -67,3 +67,16 @@ def reverse_string(string):
     return result
     
 reverse_string("hello")
+
+def palindrome_checker(string):
+    if len(string) == 1:
+        return string
+    result = ''
+
+    for s in string:
+        result = s + result
+    if string == result:
+        return True
+    return False
+
+palindrome_checker("ollo")
