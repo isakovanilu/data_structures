@@ -66,7 +66,7 @@ def reverse_string(string):
     print(result)
     return result
     
-reverse_string("hello")
+# reverse_string("hello")
 
 def palindrome_checker(string):
     if len(string) == 1:
@@ -75,8 +75,10 @@ def palindrome_checker(string):
 
     for s in string:
         result = s + result
-    if string == result:
+    if string.lower() == result.lower():
+        print('its palindrome')
         return True
+    print('not a palindrome')
     return False
 
 palindrome_checker("ollo")
