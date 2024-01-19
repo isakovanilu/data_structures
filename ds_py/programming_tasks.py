@@ -69,6 +69,11 @@ def reverse_string(string):
 # reverse_string("hello")
 
 def palindrome_checker(string):
+    """
+    Palindrome Checker: Create a Python program that checks if a given string
+    is a palindrome (reads the same backward as forward). 
+    This enhances understanding of strings, loops, and conditional statements.
+    """
     if len(string) == 1:
         return string
     result = ''
