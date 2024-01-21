@@ -42,7 +42,7 @@ def number_guessing():
     """
     rand_number = random.randint(1, 10)
     while True:
-        guessed_number = int(input('Enter a number to guess: '))
+        guessed_number = int(input('Enter a number to guess: ').strip())
         if rand_number < guessed_number:
             print('Too high')
         elif rand_number > guessed_number:
@@ -52,7 +52,7 @@ def number_guessing():
             break
 
 
-# number_guessing()
+number_guessing()
 
 def reverse_string(string):
     if len(string) == 1:
@@ -66,7 +66,7 @@ def reverse_string(string):
     print(result)
     return result
     
-reverse_string("hell o")
+# reverse_string("hell o")
 
 def palindrome_checker(string):
     """
