@@ -52,7 +52,7 @@ def number_guessing():
             break
 
 
-number_guessing()
+# number_guessing()
 
 def reverse_string(string):
     if len(string) == 1:
@@ -87,3 +87,9 @@ def palindrome_checker(string):
     return False
 
 # palindrome_checker("ollo ")
+
+def fact_num(n):
+    if n == 0:
+        return 1
+    
+    
