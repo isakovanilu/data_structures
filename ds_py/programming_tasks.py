@@ -94,10 +94,8 @@ def factorial_num(n):
     This can be done using both iteration (loops) and recursion, 
     providing insight into different approaches to problem-solving.
     """
-    if n == 0:
+    if n == 0 or n == 1:
         return 1
-    elif n == 1:
-        return n
     else:
         return n * factorial_num(n - 1)
 
