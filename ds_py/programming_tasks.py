@@ -110,15 +110,17 @@ def temperature_converter():
     and basic mathematical formulas in programming.
     """
     temp = int(input('Enter the Number: '))
-    metric = input('Enter metric: F/f or C/c: ')
+    metric = input('Enter metric to convert: F/f or C/c: ')
     
     if metric.upper() == 'F':
-        result = (temp - 32)*5/9
-        print(f'{result} C')
-        return f'{result} C'
-    elif metric.upper() == 'C':
         result = (temp * 9/5) + 32 
         print(f'{result} F')
         return f'{result} F'
+
+    elif metric.upper() == 'C':
+        result = (temp - 32)*5/9
+        print(f'{result} C')
+        return f'{result} C'
+
         
 temperature_converter()
