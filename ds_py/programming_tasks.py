@@ -99,5 +99,20 @@ def factorial_num(n):
     else:
         return n * factorial_num(n - 1)
 
-print(factorial_num(5))
+# print(factorial_num(5))
     
+    
+def temperature_converter():
+    temp = int(input('Enter the Number: '))
+    metric = input('Enter metric: F/f or C/c: ')
+    
+    if metric.upper() == 'F':
+        result = (temp - 32)*5/9
+        print(f'{result} C')
+        return f'{result} C'
+    elif metric.upper() == 'C':
+        result = (temp * 9/5) + 32 
+        print(f'{result} F')
+        return f'{result} F'
+        
+temperature_converter()
