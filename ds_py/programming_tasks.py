@@ -88,8 +88,13 @@ def palindrome_checker(string):
 
 # palindrome_checker("ollo ")
 
-def fact_num(n):
+def factorial_num(n):
     if n == 0:
         return 1
-    
+    elif n == 1:
+        return n
+    else:
+        return n * factorial_num(n - 1)
+
+print(factorial_num(5))
     
