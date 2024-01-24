@@ -89,6 +89,11 @@ def palindrome_checker(string):
 # palindrome_checker("ollo ")
 
 def factorial_num(n):
+    """Factorial Calculator: Implement a program that 
+    calculates the factorial of a given number. 
+    This can be done using both iteration (loops) and recursion, 
+    providing insight into different approaches to problem-solving.
+    """
     if n == 0:
         return 1
     elif n == 1:
