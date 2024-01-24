@@ -103,6 +103,12 @@ def factorial_num(n):
     
     
 def temperature_converter():
+    """
+    Temperature Converter: Write a program that converts temperature 
+    from Fahrenheit to Celsius and vice versa. 
+    This introduces the concept of user input 
+    and basic mathematical formulas in programming.
+    """
     temp = int(input('Enter the Number: '))
     metric = input('Enter metric: F/f or C/c: ')
     
