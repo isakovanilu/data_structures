@@ -114,13 +114,11 @@ def temperature_converter():
     
     if metric.upper() == 'F':
         result = (temp * 9/5) + 32 
-        print(f'{int(result)} F')
         return f'{int(result)} F'
 
     elif metric.upper() == 'C':
         result = (temp - 32)*5/9
-        print(f'{int(result)} C')
         return f'{int(result)} C'
 
         
-temperature_converter()
+print(temperature_converter())
