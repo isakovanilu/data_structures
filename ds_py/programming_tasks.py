@@ -108,6 +108,9 @@ def temperature_converter():
     from Fahrenheit to Celsius and vice versa. 
     This introduces the concept of user input 
     and basic mathematical formulas in programming.
+
+    Returns:
+        str: A value for F or C
     """
     temp = int(input('Enter the Number: '))
     metric = input('Enter metric to convert: F/f or C/c: ')
