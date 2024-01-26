@@ -125,6 +125,18 @@ def temperature_converter():
 
 
 def count_vowels(string_test):
+    """
+    Count Vowels in a String: Develop a program that counts 
+    the number of vowels in a given string. 
+    This will help in understanding string manipulation 
+    and the use of loops and conditionals.
+
+    Args:
+        string_test (str): A string
+
+    Returns:
+        int: total counts of vowels in the given string
+    """
 
     vowels = ['a', 'e', 'i', 'o', 'u']
     vowels_cnt = 0
