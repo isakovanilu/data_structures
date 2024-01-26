@@ -121,4 +121,16 @@ def temperature_converter():
         return f'{int(result)} C'
 
         
-print(temperature_converter())
+# print(temperature_converter())
+
+
+def count_vowels(string_test):
+
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels_cnt = 0
+    for i in string_test:
+        if i in vowels:
+            vowels_cnt+=1
+    return vowels_cnt
+
+print(count_vowels('sometimes'))
