@@ -55,6 +55,17 @@ def number_guessing():
 # number_guessing()
 
 def reverse_string(string):
+    """
+    String Reverser: Write a program that takes a string 
+    input and prints its reverse. 
+    This task will help in understanding strings and loops.
+
+    Args:
+        string (str): A string
+
+    Returns:
+        str: reversed string
+    """
     if len(string) == 1:
         print(string)
         return string
@@ -73,6 +84,12 @@ def palindrome_checker(string):
     Palindrome Checker: Create a Python program that checks if a given string
     is a palindrome (reads the same backward as forward). 
     This enhances understanding of strings, loops, and conditional statements.
+
+    Args:
+        string (str): A string
+
+    Returns:
+        bool: A result
     """
     if len(string) == 1:
         return string
@@ -89,11 +106,20 @@ def palindrome_checker(string):
 # palindrome_checker("ollo ")
 
 def factorial_num(n):
-    """Factorial Calculator: Implement a program that 
+    """
+    Factorial Calculator: Implement a program that 
     calculates the factorial of a given number. 
     This can be done using both iteration (loops) and recursion, 
     providing insight into different approaches to problem-solving.
+
+
+    Args:
+        n (int): An integer number
+
+    Returns:
+        int: factorial value of the given number
     """
+
     if n == 0 or n == 1:
         return 1
     else:
