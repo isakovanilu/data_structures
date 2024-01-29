@@ -40,6 +40,7 @@ def number_guessing():
     This will teach control structures (if-else statements) 
     and the use of random number generation.
     """
+
     rand_number = random.randint(1, 10)
     while True:
         guessed_number = int(input('Enter a number to guess: ').strip())
@@ -161,7 +162,7 @@ def count_vowels(string_test):
     and the use of loops and conditionals.
 
     Args:
-        string_test (str): A string
+        string_test (str): A string containg vowels
 
     Returns:
         int: total counts of vowels in the given string
