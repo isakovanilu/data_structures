@@ -5,6 +5,9 @@ concept of maintaining state and handling user choices."""
 
 
 class DebitCard:
-    def __init__(self, card_id, pin):
+    def __init__(self, card_id, pin, first_name, last_name, balance):
         self.card_id = card_id
         self.pin = pin
+        self.first_name = first_name
+        self.last_name = last_name
+        self.balance = balance
