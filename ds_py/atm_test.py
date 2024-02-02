@@ -13,5 +13,9 @@ class DebitCard:
         self.balance = balance
     
     def check_balance(self):
-        print(f'Current balance: {self.balance}')
+        print(f'Current Balance: {self.balance}')
+        
+    def deposit(self, deposit_amount):
+        self.balance += deposit_amount
+        print(f'Deposited: {deposit_amount} $')
         
