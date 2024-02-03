@@ -17,5 +17,12 @@ class DebitCard:
         
     def deposit(self, deposit_amount):
         self.balance += deposit_amount
-        print(f'Deposited: {deposit_amount} $')
+        print(f'Deposited: {deposit_amount}$')
+        
+    def withdraw_amount(self, withdraw_amount):
+        if self.balance < withdraw_amount:
+            print('Insufficient amount')
+        else:
+            self.balance -= withdraw_amount
+            print(f'Withdrawed: {withdraw_amount}$, remaining balance is {self.balance}')
         
