@@ -26,3 +26,11 @@ class DebitCard:
             self.balance -= withdraw_amount
             print(f'Withdrawed: {withdraw_amount}$, remaining balance is {self.balance}')
         
+    def run(self):
+        print(self.check_balance())
+        print(self.deposit(2000))
+        print(self.withdraw_amount(1000))
+        
+# Running the ATM
+atm = DebitCard(card_id=12, pin=23, first_name='test', last_name='test1', balance=100)
+atm.run()
