@@ -5,11 +5,9 @@ concept of maintaining state and handling user choices."""
 
 
 class DebitCard:
-    def __init__(self, card_id, pin, first_name, last_name, balance=100):
+    def __init__(self, card_id, pin, balance=100):
         self.card_id = card_id
         self.pin = pin
-        self.first_name = first_name
-        self.last_name = last_name
         self.balance = balance
     
     def check_balance(self):
@@ -32,5 +30,5 @@ class DebitCard:
         print(self.withdraw_amount(1000))
         
 # Running the ATM
-atm = DebitCard(card_id=12, pin=23, first_name='test', last_name='test1', balance=100)
+atm = DebitCard(card_id=12, pin=23, balance=1700)
 atm.run()
