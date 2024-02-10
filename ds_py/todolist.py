@@ -11,5 +11,6 @@ class ToDoList():
             todo_lists = []
         self.todo_lists = todo_lists
         
-
+    def add_task(self, task):
+        self.todos.append(task)
         
