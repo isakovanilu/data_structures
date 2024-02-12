@@ -14,3 +14,9 @@ class ToDoList():
     def add_task(self, task):
         self.todos.append(task)
         
+    def delete_by_index(self, index):
+        if len(self.todos) == 0:
+            print('List is empty')
+        self.todos.remove(self.todos[index])
+
+        
