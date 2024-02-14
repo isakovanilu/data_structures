@@ -19,4 +19,7 @@ class ToDoList():
             print('List is empty')
         self.todos.remove(self.todos[index])
 
-        
+    def delete_todo(self, todo):
+        if self.todos == []:
+            print('List is empty')
+        self.todos.remove(todo)
