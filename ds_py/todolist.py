@@ -23,3 +23,7 @@ class ToDoList():
         if self.todos == []:
             print('List is empty')
         self.todos.remove(todo)
+        
+    def view(self):
+        todo = [print(todo) for todo in self.todos]
+        return todo
