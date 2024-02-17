@@ -12,18 +12,19 @@ class ToDoList():
         self.todo_lists = todo_lists
         
     def add_task(self, task):
-        self.todos.append(task)
+        self.todo_lists.append(task)
         
     def delete_by_index(self, index):
-        if len(self.todos) == 0:
+        if len(self.todo_lists) == 0:
             print('List is empty')
-        self.todos.remove(self.todos[index])
+        self.todo_lists.remove(self.todos[index])
 
     def delete_todo(self, todo):
-        if self.todos == []:
+        if self.todo_lists == []:
             print('List is empty')
-        self.todos.remove(todo)
+        self.todo_lists.remove(todo)
         
     def view(self):
-        todo = [print(todo) for todo in self.todos]
+        todo = [print(todo) for todo in self.todo_lists]
         return todo
+    
