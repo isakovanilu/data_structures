@@ -28,3 +28,5 @@ class ToDoList():
         todo = [print(todo) for todo in self.todo_lists]
         return todo
     
+todo = ToDoList([1,2,3,4,5])
+print(todo.view())
