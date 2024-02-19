@@ -17,7 +17,8 @@ class ToDoList():
     def delete_by_index(self, index):
         if len(self.todo_lists) == 0:
             print('List is empty')
-        self.todo_lists.remove(self.todos[index])
+        self.todo_lists.remove(self.todo_lists[index])
+        print('removed')
 
     def delete_todo(self, todo):
         if self.todo_lists == []:
@@ -28,5 +29,3 @@ class ToDoList():
         todo = [print(todo) for todo in self.todo_lists]
         return todo
     
-todo = ToDoList([1,2,3,4,5])
-print(todo.view())
