@@ -15,5 +15,6 @@ class Book:
     def __str__(self):
         return f"{self.title} by {self.author} ({self.isbn})"
          
-        
-                
+class Library:
+    def __init__(self):
+        pass
