@@ -21,3 +21,8 @@ class Library:
     
     def add_book(self, book):
         self.books.append(book)
+        
+    def remove_book(self, isbn):
+        for book in self.books:
+            if book.isbn == isbn:
+                pass
