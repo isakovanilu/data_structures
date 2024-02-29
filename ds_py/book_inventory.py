@@ -25,4 +25,5 @@ class Library:
     def remove_book(self, isbn):
         for book in self.books:
             if book.isbn == isbn:
+                self.books.remove(book)
                 pass
