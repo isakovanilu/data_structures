@@ -26,4 +26,6 @@ class Library:
         for book in self.books:
             if book.isbn == isbn:
                 self.books.remove(book)
-                pass
+                break
+            else:
+                print("Book not found.")
