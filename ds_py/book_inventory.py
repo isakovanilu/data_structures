@@ -29,3 +29,8 @@ class Library:
                 break
             else:
                 print("Book not found.")
+                
+    def display_books(self):
+        for book in self.books:
+            print(book)
+            
