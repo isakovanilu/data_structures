@@ -27,10 +27,16 @@ class Library:
             if book.isbn == isbn:
                 self.books.remove(book)
                 break
-            else:
-                print("Book not found.")
+        else:
+            print("Book not found.")
                 
     def display_books(self):
         for book in self.books:
             print(book)
             
+library = Library()
+library.add_book(Book("Mindset", "C. Dweck", "978-0316769345"))
+library.add_book(Book("Code Craft", "P. Goodliffe", "978-00609352345"))
+library.display_books()
+library.remove_book("978-00609352345")
+library.display_books()
