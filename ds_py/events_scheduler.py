@@ -10,3 +10,7 @@ class Event:
         self.name = name
         self.date = date
         self.description = description
+        
+    def __str__(self):
+        return f"{self.name} at {self.date} ({self.description})"
+         
