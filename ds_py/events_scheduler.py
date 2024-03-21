@@ -13,4 +13,7 @@ class Event:
         
     def __str__(self):
         return f"{self.name} at {self.date} ({self.description})"
-         
+       
+class Scheduler:
+    def __init__(self):
+        self.events = []  
