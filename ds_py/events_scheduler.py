@@ -18,3 +18,6 @@ class Event:
 class Scheduler:
     def __init__(self):
         self.events = []
+        
+    def add_event(self, event):
+        pass
