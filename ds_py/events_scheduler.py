@@ -6,14 +6,15 @@ Scheduler class to manage and organize events by date.
 """
 
 class Event:
-    def __init__(self, name, date, description):
+    def __init__(self, name, date, start_time, end_time):
         self.name = name
         self.date = date
-        self.description = description
+        self.start_time = start_time
+        self.end_time = end_time
         
     def __str__(self):
-        return f"{self.name} at {self.date} ({self.description})"
+        return f"{self.name} on {self.date} from {self.start_time} to {self.end_time}"
        
 class Scheduler:
     def __init__(self):
-        self.events = []  
+        self.events = []
