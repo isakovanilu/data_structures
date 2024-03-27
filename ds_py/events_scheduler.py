@@ -20,4 +20,5 @@ class Scheduler:
         self.events = []
         
     def add_event(self, event):
-        pass
+        self.events.append(event)
+        self.events.sort(key=lambda x: x.date)
