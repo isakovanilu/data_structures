@@ -22,3 +22,6 @@ class Scheduler:
     def add_event(self, event):
         self.events.append(event)
         self.events.sort(key=lambda x: x.date)
+    
+    def remove_event(self, title):
+        pass
