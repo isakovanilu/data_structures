@@ -23,5 +23,11 @@ class Scheduler:
         self.events.append(event)
         self.events.sort(key=lambda x: x.date)
     
-    def remove_event(self, title):
-        pass
+    def remove_event(self, name):
+        for event in self.events:
+            if event.name == name:
+                self.events.remove(event)
+                break
+        else:
+            print("Event not found.")
+         
