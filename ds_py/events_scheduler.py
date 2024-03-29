@@ -30,4 +30,7 @@ class Scheduler:
                 break
         else:
             print("Event not found.")
+            
+    def display_event(self):
+        pass
          
