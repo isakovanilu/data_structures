@@ -31,6 +31,7 @@ class Scheduler:
         else:
             print("Event not found.")
             
-    def display_event(self):
-        pass
+    def display_events(self):
+        for event in self.events:
+            print(event)
          
