@@ -35,3 +35,10 @@ class Scheduler:
         for event in self.events:
             print(event)
          
+         
+scheduler = Scheduler()
+scheduler.add_event(Event("Meeting with nilu", "2023-02-22", "10:00 AM", "11:00 AM"))
+scheduler.add_event(Event("Lunch with nilu", "2023-02-22", "12:00 PM", "1:00 PM"))
+scheduler.display_events()
+scheduler.remove_event("Meeting with nilu")
+scheduler.display_events()        
