@@ -24,6 +24,9 @@ class Scheduler:
         self.events.sort(key=lambda x: x.date)
     
     def remove_event(self, name):
+        if len(self.events) < 0:
+            print('There is no events')
+            return
         for event in self.events:
             if event.name == name:
                 self.events.remove(event)
