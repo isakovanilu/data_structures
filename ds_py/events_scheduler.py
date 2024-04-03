@@ -35,9 +35,11 @@ class Scheduler:
             print("Event not found.")
             
     def display_events(self):
-        if len(self.events) > 0:
-            for event in self.events: 
-                print(event)
+        if len(self.events) < 0:
+            print('There is no events')
+            return
+        for event in self.events: 
+            print(event)
          
          
 scheduler = Scheduler()
